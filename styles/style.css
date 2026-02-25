@@ -1,66 +1,127 @@
 /* место для вашего кода */
 .header {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
   align-items: center;
-  padding-top: 92px;
   padding: 92px 50px 96px 50px;
 }
 
-.menu {
+.header__links-list {
   display: flex;
-  column-gap: 30px;
+  column-gap: 20px;
+  list-style: circle;
 }
 
-.menu__link {
-  position: relative;
+.header__links-list-item--no-bullet {
+  list-style: none;
+}
+
+.header__link {
   font-size: 18px;
   text-decoration: none;
   border-bottom: 1px solid #000;
 }
 
-.menu__link--middle::before,
-.menu__link--middle::after {
-  content: "";
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  border: 0.5px solid #000;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  pointer-events: none;
-}
-
-.menu__link--middle::before {
-  left: calc(-30px / 2 - 3.5px);
-}
-
-.menu__link--middle::after {
-  right: calc(-30px / 2 - 3.5px);
-}
-
-.menu__link--active {
-  text-decoration: none;
+.header__link--active {
+  border-bottom: none;
 }
 
 .header__logo {
-}
-
-.header__logo img {
+  margin-left: 36px;
   width: 148px;
 }
 
-.contacts {
+.header__address {
+  justify-self: end;
   display: flex;
   flex-direction: column;
   font-size: 18px;
   align-items: start;
-  width: 240px;
+  max-width: 240px;
 }
 
 .telephone,
 .email {
   text-decoration: none;
   border-bottom: 1px solid #000;
+}
+
+.cover {
+  background: url(../images/cover.jpg) center;
+  background-size: cover;
+  min-height: 757px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 165px 50px 50px 50px;
+}
+
+.overlay {
+  position: absolute;
+  opacity: 60%;
+  background-color: #000;
+  inset: 0;
+}
+
+.cover__title {
+  font-size: 100px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 30%;
+  line-height: 115%;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.aligned-text--left {
+  align-self: start;
+}
+
+.aligned-text--center {
+  align-self: center;
+}
+
+.aligned-text--right {
+  align-self: end;
+}
+
+.cover__description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+
+.cover__description-text {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 22px;
+  word-spacing: 20px;
+}
+
+.cover .bet-button {
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #fff;
+  text-transform: uppercase;
+  height: 51px;
+  width: 256px;
+  font-size: 22px;
+}
+
+.lots {
+  margin-top: 180px;
+}
+
+.lots__heading {
+  text-transform: uppercase;
+  font-size: 40px;
+}
+
+.lots__card-list {
+}
+
+.lots__card-list-item {
 }
