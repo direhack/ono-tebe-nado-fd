@@ -1,1 +1,66 @@
 /* место для вашего кода */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 92px;
+  padding: 92px 50px 96px 50px;
+}
+
+.menu {
+  display: flex;
+  column-gap: 30px;
+}
+
+.menu__link {
+  position: relative;
+  font-size: 18px;
+  text-decoration: none;
+  border-bottom: 1px solid #000;
+}
+
+.menu__link--middle::before,
+.menu__link--middle::after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: 0.5px solid #000;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.menu__link--middle::before {
+  left: calc(-30px / 2 - 3.5px);
+}
+
+.menu__link--middle::after {
+  right: calc(-30px / 2 - 3.5px);
+}
+
+.menu__link--active {
+  text-decoration: none;
+}
+
+.header__logo {
+}
+
+.header__logo img {
+  width: 148px;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  align-items: start;
+  width: 240px;
+}
+
+.telephone,
+.email {
+  text-decoration: none;
+  border-bottom: 1px solid #000;
+}
