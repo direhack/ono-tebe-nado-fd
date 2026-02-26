@@ -3,13 +3,12 @@
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
-  padding: 92px 50px 96px 50px;
+  padding: 92px 70px 96px 50px;
 }
 
 .header__links-list {
   display: flex;
-  justify-content: end;
-  column-gap: 32px;
+  column-gap: 35px;
   list-style: circle;
 }
 
@@ -29,7 +28,7 @@
 
 .header__logo {
   width: 130px;
-  margin-left: 45px;
+  margin-left: 20px;
 }
 
 .header__address {
@@ -57,7 +56,7 @@
   flex-direction: column;
   justify-content: space-between;
   min-height: 757px;
-  padding: 165px 0px 50px 72px;
+  padding: 160px 20px 50px 50px;
   background: url(../images/cover.jpg) center;
   background-size: cover;
 }
@@ -104,7 +103,7 @@
   color: #fff;
   font-size: 22px;
   text-transform: uppercase;
-  word-spacing: 20px;
+  word-spacing: 18px;
 }
 
 .cover .bet-button {
@@ -122,7 +121,8 @@
 }
 
 .lots__heading {
-  margin-left: 85px;
+  margin-bottom: 27px;
+  margin-left: 65px;
   font-size: 40px;
   text-transform: uppercase;
 }
@@ -130,9 +130,8 @@
 .lots__card-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 25px;
-  margin-top: 27px;
-  margin-left: 45px;
   list-style: none;
 }
 
@@ -194,12 +193,13 @@
   width: 254px;
   color: #fff;
   font-size: 20px;
+  line-height: 1.2;
 }
 
 .lots__look-more-link {
   display: inline-block;
   margin-top: 30px;
-  margin-left: 85px;
+  margin-left: 65px;
   border-bottom: 1px solid #000;
   font-size: 20px;
   text-decoration: none;
@@ -218,7 +218,7 @@
   align-items: center;
   width: 240px;
   height: 240px;
-  margin-left: 90px;
+  margin-left: 50px;
   border-radius: 50%;
   background-color: #000;
 }
@@ -229,7 +229,7 @@
 
 .about__title {
   margin-top: calc(256px - 155px);
-  margin-left: 70px;
+  margin-left: 50px;
   font-size: 40px;
   text-transform: uppercase;
 }
@@ -239,7 +239,7 @@
   flex-direction: column;
   row-gap: 24px;
   margin-top: 100px;
-  margin-left: 70px;
+  margin-left: 50px;
   font-size: 20px;
 }
 
@@ -247,10 +247,7 @@
   display: grid;
   grid-template-columns: 264px 164px 240px;
   justify-content: space-between;
-  margin-top: 190px;
-  padding-right: 28px;
-  padding-bottom: 82px;
-  padding-left: 50px;
+  padding: 210px 50px 82px 30px;
 }
 
 .footer__menu-link {
