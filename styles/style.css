@@ -8,7 +8,7 @@
 
 .header__links-list {
   display: flex;
-  column-gap: 20px;
+  column-gap: 24px;
   list-style: circle;
 }
 
@@ -176,8 +176,8 @@
 
 .card__title {
   z-index: 1;
+  align-self: center;
   width: 254px;
-  margin: 0 auto;
   color: #fff;
   font-size: 22px;
   text-decoration: underline;
@@ -186,16 +186,14 @@
 
 .card__text {
   z-index: 1;
+  align-self: center;
   width: 254px;
-  margin: 0 auto;
   color: #fff;
   font-size: 20px;
 }
 
 .lots__look-more-link {
-  display: block;
-  display: flex;
-  justify-self: start;
+  display: inline-block;
   margin-top: 30px;
   margin-left: 40px;
   border-bottom: 1px solid #000;
@@ -259,8 +257,8 @@
 }
 
 .footer__menu-list {
-  list-style: none;
   text-align: center;
+  list-style: none;
 }
 
 .footer__social-list {
