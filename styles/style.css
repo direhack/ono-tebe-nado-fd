@@ -71,8 +71,7 @@
   font-size: 100px;
   color: #fff;
   text-transform: uppercase;
-  letter-spacing: 30%;
-  line-height: 115%;
+  letter-spacing: 30px;
   display: flex;
   flex-direction: column;
   z-index: 1;
