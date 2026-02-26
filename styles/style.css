@@ -194,4 +194,46 @@
   margin-top: 30px;
   margin-left: 40px;
   font-size: 20px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  border-bottom: 1px solid #000;
+  display: flex;
+  justify-self: start;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 334px auto;
+  margin-top: 155px;
+}
+
+.about__logo {
+  width: 240px;
+  height: 240px;
+  background-color: #000;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+}
+
+.about__logo-image {
+  width: 148px;
+}
+
+.about__title {
+  text-transform: uppercase;
+  font-size: 40px;
+  margin-top: calc(256px - 155px);
+  margin-left: 24px;
+}
+
+.about__text {
+  margin-left: 24px;
+  margin-top: 100px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
 }
