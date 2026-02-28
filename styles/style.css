@@ -230,14 +230,7 @@
   margin-top: 100px;
   margin-left: 50px;
   font-size: 20px;
-}
-
-.about__text--first-paragraph {
-  padding-right: 29px;
-}
-
-.about__text--second-paragraph {
-  padding-right: 24px;
+  padding-right: 26px;
 }
 
 .footer {
